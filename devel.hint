@@ -1,0 +1,8 @@
+category: Gnome
+requires: cygwin glib2-devel libxml2-devel libbeagle
+external-source: libbeagle
+sdesc: "Beagle search and indexing interface library (development)"
+ldesc: "libbeagle is a standalone C library interface to the Beagle 
+desktop search and indexing system.  Users of libbeagle can search the 
+Beagle indexes as well as send data to the service to be indexed.  Also 
+included are Python bindings to libbeagle."

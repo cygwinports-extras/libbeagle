@@ -1,0 +1,8 @@
+category: Gnome Python
+requires: cygwin libbeagle python python-gobject2
+external-source: libbeagle
+sdesc: "Python bindings for Beagle search and indexing interface library"
+ldesc: "libbeagle is a standalone C library interface to the Beagle 
+desktop search and indexing system.  Users of libbeagle can search the 
+Beagle indexes as well as send data to the service to be indexed.  Also 
+included are Python bindings to libbeagle."

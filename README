@@ -1,0 +1,164 @@
+libbeagle
+------------------------------------------
+libbeagle is a standalone C library interface to the Beagle desktop 
+search and indexing system.  Users of libbeagle can search the Beagle 
+indexes as well as send data to the service to be indexed.  Also 
+included are Python bindings to libbeagle.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  glib2-2.14.4-1
+  libxml2-2.6.30-1
+(python-beagle)
+  python-2.5.1-3
+  python-gobject2-2.14.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gtk-doc-1.9-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.beagle-project.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/libbeagle/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libbeagle-0.3.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libbeagle-0.3.0-X.cygport all
+
+This will create:
+  /usr/src/libbeagle-0.3.0-X-src.tar.bz2
+  /usr/src/libbeagle-0.3.0-X.tar.bz2
+  /usr/src/libbeagle-devel-0.3.0-X.tar.bz2
+  /usr/src/python-beagle-0.3.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libbeagle)
+  /usr/bin/cygbeagle-1.dll
+  /usr/share/doc/Cygwin/libbeagle-0.3.0.README
+  /usr/share/doc/libbeagle-0.3.0/AUTHORS
+  /usr/share/doc/libbeagle-0.3.0/COPYING
+  /usr/share/doc/libbeagle-0.3.0/ChangeLog
+  /usr/share/doc/libbeagle-0.3.0/INSTALL
+  /usr/share/doc/libbeagle-0.3.0/NEWS
+  /usr/share/doc/libbeagle-0.3.0/README
+
+(libbeagle-devel)
+  /usr/include/libbeagle/beagle/beagle-client.h
+  /usr/include/libbeagle/beagle/beagle-daemon-information-request.h
+  /usr/include/libbeagle/beagle/beagle-daemon-information-response.h
+  /usr/include/libbeagle/beagle/beagle-empty-response.h
+  /usr/include/libbeagle/beagle/beagle-error-response.h
+  /usr/include/libbeagle/beagle/beagle-finished-response.h
+  /usr/include/libbeagle/beagle/beagle-hit.h
+  /usr/include/libbeagle/beagle/beagle-hits-added-response.h
+  /usr/include/libbeagle/beagle/beagle-hits-subtracted-response.h
+  /usr/include/libbeagle/beagle/beagle-indexable.h
+  /usr/include/libbeagle/beagle/beagle-indexing-service-request.h
+  /usr/include/libbeagle/beagle/beagle-indexing-status-response.h
+  /usr/include/libbeagle/beagle/beagle-informational-messages-request.h
+  /usr/include/libbeagle/beagle/beagle-property.h
+  /usr/include/libbeagle/beagle/beagle-query-part-date.h
+  /usr/include/libbeagle/beagle/beagle-query-part-human.h
+  /usr/include/libbeagle/beagle/beagle-query-part-or.h
+  /usr/include/libbeagle/beagle/beagle-query-part-property.h
+  /usr/include/libbeagle/beagle/beagle-query-part-text.h
+  /usr/include/libbeagle/beagle/beagle-query-part-uri.h
+  /usr/include/libbeagle/beagle/beagle-query-part-wildcard.h
+  /usr/include/libbeagle/beagle/beagle-query-part.h
+  /usr/include/libbeagle/beagle/beagle-query.h
+  /usr/include/libbeagle/beagle/beagle-queryable-status.h
+  /usr/include/libbeagle/beagle/beagle-request.h
+  /usr/include/libbeagle/beagle/beagle-response.h
+  /usr/include/libbeagle/beagle/beagle-scheduler-information.h
+  /usr/include/libbeagle/beagle/beagle-search-term-response.h
+  /usr/include/libbeagle/beagle/beagle-shutdown-request.h
+  /usr/include/libbeagle/beagle/beagle-snippet-request.h
+  /usr/include/libbeagle/beagle/beagle-snippet-response.h
+  /usr/include/libbeagle/beagle/beagle-timestamp.h
+  /usr/include/libbeagle/beagle/beagle-util.h
+  /usr/include/libbeagle/beagle/beagle.h
+  /usr/lib/libbeagle.dll.a
+  /usr/lib/libbeagle.la
+  /usr/lib/pkgconfig/libbeagle-1.0.pc
+  /usr/share/gtk-doc/html/beagle/BeagleClient.html
+  /usr/share/gtk-doc/html/beagle/BeagleDaemonInformationRequest.html
+  /usr/share/gtk-doc/html/beagle/BeagleDaemonInformationResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleEmptyResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleErrorResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleFinishedResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleHitsAddedResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleHitsSubtractedResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleIndexingServiceRequest.html
+  /usr/share/gtk-doc/html/beagle/BeagleIndexingStatusResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleInformationalMessagesRequest.html
+  /usr/share/gtk-doc/html/beagle/BeagleQuery.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPart.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPartDate.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPartHuman.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPartOr.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPartProperty.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPartText.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPartUri.html
+  /usr/share/gtk-doc/html/beagle/BeagleQueryPartWildcard.html
+  /usr/share/gtk-doc/html/beagle/BeagleRequest.html
+  /usr/share/gtk-doc/html/beagle/BeagleResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleSearchTermResponse.html
+  /usr/share/gtk-doc/html/beagle/BeagleShutdownRequest.html
+  /usr/share/gtk-doc/html/beagle/BeagleSnippetRequest.html
+  /usr/share/gtk-doc/html/beagle/BeagleSnippetResponse.html
+  /usr/share/gtk-doc/html/beagle/beagle-BeagleHit.html
+  /usr/share/gtk-doc/html/beagle/beagle-BeagleIndexable.html
+  /usr/share/gtk-doc/html/beagle/beagle-BeagleProperty.html
+  /usr/share/gtk-doc/html/beagle/beagle-BeagleQueryableStatus.html
+  /usr/share/gtk-doc/html/beagle/beagle-BeagleSchedulerInformation.html
+  /usr/share/gtk-doc/html/beagle/beagle-BeagleTimestamp.html
+  /usr/share/gtk-doc/html/beagle/beagle.devhelp
+  /usr/share/gtk-doc/html/beagle/beagle.devhelp2
+  /usr/share/gtk-doc/html/beagle/ch01.html
+  /usr/share/gtk-doc/html/beagle/ch02.html
+  /usr/share/gtk-doc/html/beagle/ch03.html
+  /usr/share/gtk-doc/html/beagle/ch04.html
+  /usr/share/gtk-doc/html/beagle/ch05.html
+  /usr/share/gtk-doc/html/beagle/home.png
+  /usr/share/gtk-doc/html/beagle/index.html
+  /usr/share/gtk-doc/html/beagle/index.sgml
+  /usr/share/gtk-doc/html/beagle/left.png
+  /usr/share/gtk-doc/html/beagle/right.png
+  /usr/share/gtk-doc/html/beagle/style.css
+  /usr/share/gtk-doc/html/beagle/up.png
+
+(python-beagle)
+  /usr/lib/python2.5/site-packages/beagle.dll
+  /usr/lib/python2.5/site-packages/beagle.la
+
+------------------
+
+Port Notes:
+
+----- version 0.3.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
