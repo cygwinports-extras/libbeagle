@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin glib2-devel libxml2-devel libbeagle
+requires: glib2-devel libxml2-devel libbeagle
 external-source: libbeagle
 sdesc: "Beagle search and indexing interface library (development)"
 ldesc: "libbeagle is a standalone C library interface to the Beagle 
